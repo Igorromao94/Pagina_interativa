@@ -10,70 +10,100 @@
 </head>
 <body>
         <header>
-            <div class="centralizar">
-                <img src="img/local-logo.png" alt="logo">
-                <p>Agência de viagens</p>
+            <div class="centralizar cabecario">
+                <img class="logo_cabecario" src="img/local-logo.png" alt="logo">
+                <p class="texto_cabecario">Agência de viagens</p>
             </div>
-            
         </header>
 
         <main>
-           
             <section class="conteudo_principal">
-                <div class="centralizar">
+                <div class="centralizar formulario">
                     <div class="cabessario__forme">
-                        <h2>Solicite um orçamento</h2>
+                        <img class="imagen_pre_form" src="img/aviao.png" alt="logo de um avião">
+                        <h2 class="titulo_pre_form">Solicite um orçamento</h2>
                     </div>
                     <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
-    
-                        <h3>Informe Seus Dados</h3>
-    
-                        <label for="nome">Nome</label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui."/>
-    
-                        <label for="email">email</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail aqui.">
-    
-                        <label for="celular">Cel:</label>
-                        <input type="tel" name="celular" id="celular" placeholder="(XX) X XXXX-XXXX">
                         
-                        <label for="ida">Data de ida</label>
-                        <input type="date" name="partida" id="ida">
+
+                        <h3 class="sub_titulo_form">Informe Seus Dados</h3>
     
-                        <label for="volta">Data de Volta</label>
-                        <input type="date" name="chegada" id="volta">
-    
-                        <label for="cidade_ida">Origem</label>
-                        <select name="origem" id="cidade_ida">
-                            <option value="">--</option>
-                            <option value="Rio_de_Janeiro">Rio de Janeiro</option>
-                        </select>
-    
-                        <label for="cidade_volta">Destino</label>
-                        <select name="destino" id="cidade_volta">
-                            <option value="">--</option>
-                            <option value="Sao_Paulo">São Paulo</option>
-                        </select>
-    
-                        <label for="quato">Quartos com cama infantil?</label>
-                        <label for="sim">Sim</label><input id="sim" name="infantil" value="cama_inf_s" type="radio" >
-                        <label for="nao">Não</label><input id="nao" name="infantil" value="cama_inf_n" type="radio" checked>
-    
-                        <label for="">Preferência da hospedagem</label>
+                        <label class="label_form" for="nome">Nome</label>
+                        <input class="estrutura_basica_input" id="nome" type="text" name="nome" placeholder="Digite seu nome aqui."/>
                         
-                        <input id="Piscina" type="checkbox" name="preferencias[]" value="Pisinca">
-                        <label for="Piscina">Piscina</label>
-    
-                        <input  id="wifi" type="checkbox" name="preferencias[]" value="Wifi">
-                        <label for="wifi" >Wifi</label>
+                        <label class="label_form" for="email">email</label>
+                        <input class="estrutura_basica_input" id="email" type="email" name="email" placeholder="Digite seu e-mail aqui.">
                         
-                        <input id="garagen" type="checkbox" name="preferencias[]" value="Garagen" >
-                        <label for="garagen">Garagen</label>
+                        <label class="label_form" for="celular">Cel:</label>
+                        <input class="estrutura_basica_input" type="tel" name="celular" id="celular" placeholder="(XX) X XXXX-XXXX">
                         
-                        <input id="suite" type="checkbox" name="preferencias[]" value="Suite">
-                        <label for="suite">Suite</label>
+                        <div class="lateralizado">
+                            <div class="form_ida estrutura_form_lateral">
+                                <label class="label_form" for="ida">Data de ida</label>
+                                <input class="estrutura_basica_input" type="date" name="partida" id="ida">
+                            </div>
     
-                        <button type="submit">Solicitar Orçamento</button>
+                            <div class="form_volta estrutura_form_lateral">
+                                <label class="label_form" for="volta">Data de Volta</label>
+                                <input class="estrutura_basica_input" type="date" name="chegada" id="volta">
+                            </div>
+    
+                            <div class="form_origem estrutura_form_lateral">
+                                <label class="label_form" for="cidade_ida">Origem</label>
+                                <select name="origem" id="cidade_ida">
+                                    <option value="">--</option>
+                                    <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+                                </select>
+                            </div>
+    
+                            <div class="form_destino estrutura_form_lateral">
+                                <label class="label_form" for="cidade_volta">Destino</label>
+                                <select name="destino" id="cidade_volta">
+                                    <option value="">--</option>
+                                    <option value="Sao_Paulo">São Paulo</option>
+                                </select>
+                            </div>
+                        </div>
+                           
+                        <label class="label_form espaco_diferente" for="quato">Quartos com cama infantil?</label>
+
+                        <div class="formulario_inter">
+                            <div class="form_inferior">
+                                <input class="input_inferior" id="sim" name="infantil" value="cama_inf_s" type="radio" >
+                                <label class="label_form" for="sim">Sim</label>
+                            </div>
+
+                            <div class="form_inferior">
+                                <input class="input_inferior" id="nao" name="infantil" value="cama_inf_n" type="radio" checked>
+                                <label for="nao">Não</label>
+                            </div>
+                        </div>
+
+                        <label class="label_form espaco_diferente" for="">Preferência da hospedagem</label>
+                        
+                        <div class="formulario_inter">
+                            <div class="form_inferior">
+                                <input class="input_inferior" id="Piscina" type="checkbox" name="preferencias[]" value="Pisinca">
+                                <label class="label_form" for="Piscina">Piscina</label>
+                            </div>
+
+                            <div class="form_inferior">
+                                <input class="input_inferior"  id="wifi" type="checkbox" name="preferencias[]" value="Wifi">
+                                <label class="label_form" for="wifi" >Wifi</label>
+                            </div>
+
+                            <div class="form_inferior">
+                                <input class="input_inferior" id="garagen" type="checkbox" name="preferencias[]" value="Garagen" >
+                                <label class="label_form" for="garagen">Garagen</label>
+                            </div>
+
+                            <div class="form_inferior">
+                                <input class="input_inferior" id="suite" type="checkbox" name="preferencias[]" value="Suite">
+                                <label class="label_form" for="suite">Suite</label>
+                            </div>
+                        </div>
+    
+                        <button class="foi" type="submit">Solicitar Orçamento</button>
                     </form>
                 </div>
             </section>

@@ -13,3 +13,169 @@ body{
     max-width: 1024px;
     margin: 0 auto;
 }
+
+
+/* Estilização do cabecario da pagina */
+header{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    
+    display: flex;
+    align-items: center;
+}
+
+.cabecario{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.logo_cabecario{
+    width: 32px;
+    height: 32px;
+}
+
+.texto_cabecario{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+/* Inicialização da estilização do Formulario */
+.conteudo_principal{
+    width: 100%;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/bahia.jpg');
+}
+
+.formulario{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.cabessario__forme{
+    width: 100%;
+    height: 32px;
+    background-color: #5d15d1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen_pre_form{
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.titulo_pre_form{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+form{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    padding: 30px 25px 20px 25px;
+    background-color: #fff;
+}
+
+.sub_titulo_form{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.label_form{
+    font-size: 16px;
+}
+
+.estrutura_basica_input{
+    width: 100%;
+    height: 32px;
+    
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+.datas_e_locais{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.lateralizado{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.estrutura_form_lateral{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-flow: column;
+}
+
+.lateralizado label{
+    margin: 10px 0;
+}
+
+.lateralizado input{
+    padding-left: 3px;
+}
+
+.lateralizado select{
+    padding-left: 3px;
+    height: 32px;
+}
+
+.formulario_inter{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 10px;
+}
+
+.form_inferior{
+    width: 120px;
+
+}
+
+.espaco_diferente{
+    margin-top: 10px;
+}
+
+.input_inferior{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.foi{
+    width: 160px;
+    height: 32px;
+
+    margin-top: 12px;
+
+    font-size: 16px;
+
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+}
